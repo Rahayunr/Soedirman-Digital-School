@@ -1,0 +1,92 @@
+package main
+
+import "fmt"
+
+func LuasPersegi() {
+
+	var sisi float32 = 30
+
+	LP := sisi * sisi
+
+	fmt.Println("luas persegi yaitu :")
+	fmt.Println(LP)
+}
+
+func LuasSegitiga() {
+
+	var alas float32 = 30
+	var tinggi float32 = 40
+
+	LS := 0.50 * alas * tinggi
+
+	fmt.Println("luas segitiga yaitu :")
+	fmt.Println(LS)
+}
+
+func LuasLingkaran() {
+
+	var r float32 = 27
+	const pi = 3.14
+
+	LL := pi * r * r
+
+	fmt.Println("luas lingkaran yaitu :")
+	fmt.Println(LL)
+}
+
+func EpEk() {
+
+	var m float32 = 5
+	var v float32 = 20
+	var h float32 = 30
+	const g = 9.8
+
+	EP := m * g * h
+	EK := 0.5 * m * v * v
+
+	fmt.Println("energi potensial yaitu :")
+	fmt.Println(EP)
+	fmt.Println("energi kinetik yaitu :")
+	fmt.Println(EK)
+}
+
+func Frekuensi() {
+
+	var l float32 = 20
+	const g = 9.8
+	const pi = 3.14
+
+	F := (1 / (2 * pi)) * sqrt(g / l)
+
+	fmt.Println("Besar frekuensi yaitu :")
+	fmt.Println(F)
+}
+
+func SuhuCelcius() {
+
+	var suhu float32 = 200
+
+	FH := (1.8)*suhu + 32
+	R := (0.8) * suhu
+	C := suhu
+	K := suhu + 273
+
+	fmt.Println("Suhu dinyatakan dalam Fahrenheit yaitu :")
+	fmt.Println(FH)
+	fmt.Println("Suhu dinyatakan dalam Reamur yaitu :")
+	fmt.Println(R)
+	fmt.Println("Suhu dinyatakan dalam Celcius yaitu :")
+	fmt.Println(C)
+	fmt.Println("Suhu dinyatakan dalam Kelvin yaitu :")
+	fmt.Println(K)
+}
+
+func main() {
+
+	LuasPersegi()
+	LuasSegitiga()
+	LuasLingkaran()
+	EpEk()
+	Frekuensi()
+	SuhuCelcius()
+}
