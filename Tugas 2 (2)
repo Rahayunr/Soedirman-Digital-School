@@ -1,0 +1,18 @@
+package main
+
+import "fmt"
+
+func main() {
+
+	var angka = [8]int{0, 1, 2, 3, 4, 5, 6, 7}
+
+	//slice
+	//array[low:high] untuk memunculkan 5 data
+	slice1 := angka[2:7]
+	fmt.Println("Nilai dari slice1 adalah :", slice1)
+
+	//menambahkan data slice
+	databaru := append(slice1, 20, 21, 22)
+	fmt.Println("Slice yang sudah ditambahkan data :", databaru)
+
+}
