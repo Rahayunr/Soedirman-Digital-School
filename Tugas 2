@@ -1,0 +1,33 @@
+package main
+
+import (
+	"fmt"
+)
+
+var angka = []int{30, 12, 60, 33, 80, 34, 50}
+
+func bubbleSort(arr []int) {
+	n := len(arr)
+	for i := 0; i < n-1; i++ {
+		for j := 0; j < n-i-1; j++ {
+			fmt.Println(arr)
+			fmt.Println("Elemen yang di tukar yaitu ", arr[j], "dengan ", arr[j+1])
+			if arr[j] > arr[j+1] {
+				arr[j], arr[j+1] = arr[j+1], arr[j]
+			} else {
+				fmt.Println("tidak ada penukaran")
+			}
+
+			fmt.Println("Jumlah iterasi ke ", i+1)
+		}
+	}
+
+}
+
+func main() {
+	data := []int{30, 12, 60, 33, 80, 34, 50}
+
+	fmt.Println("Data Sebelum Diurutkan:", data)
+	bubbleSort(data)
+	fmt.Println("Data Setelah Diurutkan:", data)
+}
