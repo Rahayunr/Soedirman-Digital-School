@@ -1,0 +1,15 @@
+package main
+
+import "fmt"
+
+func main() {
+
+	var Kampus = "Universitas Jenderal Soedirman"
+	fmt.Println("Kampus :", Kampus)
+
+	var Kampus1 *string = &Kampus
+
+	Kampus = "Universitas Indonesia"
+	fmt.Println("Kampus sekarang :", Kampus)
+	fmt.Println("Kampus sekarang :", *Kampus1)
+}
