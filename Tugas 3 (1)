@@ -1,0 +1,34 @@
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	//Map
+
+	person := map[string]string{
+		"name":     "Rahayu",
+		"eduction": "S1",
+		"address":  "Purbalingga",
+		"age":      "20",
+	}
+
+	fmt.Println(person)
+
+	fmt.Println("Jumlah data yang ada di Map Person yaitu:", len(person))
+
+	delete(person, "address")
+	fmt.Println("Jumlah data yang ada sudah dihapus yaitu:", len(person))
+	
+	array3 := []int{1, 3, 4, 5, 3}
+
+	fmt.Println("Nama aku adalah :", person["name"], "umur aku adalah :", person["age"])
+	fmt.Println(array3[0])
+
+	person["name"] = "Rahma"
+	person["age"] = "30"
+	fmt.Println(("Sudah ubah dan menjadi "))
+	fmt.Println("Nama aku adalah :", person["name"], "umur aku adalah :", person["age"])
+
+}
