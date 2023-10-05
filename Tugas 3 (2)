@@ -1,0 +1,30 @@
+package main
+
+import (
+	"fmt"
+)
+
+type Mahasiswa struct {
+	Nama     string
+	Jurusan  string
+	Fakultas string
+	Umur     int
+}
+
+func (m Mahasiswa) sayHello() {
+	fmt.Println("halo", m.Nama)
+}
+
+func main() {
+
+	rahayu := Mahasiswa{
+		Nama:     "Rahayu",
+		Jurusan:  "Matematika",
+		Fakultas: "MIPA",
+		Umur:     20,
+	}
+	fmt.Println(rahayu)
+	rahayu.sayHello()
+	fmt.Println("Jurusannya rahayu adalah:", rahayu.Jurusan)
+	fmt.Println(Mahasiswa{})
+}
